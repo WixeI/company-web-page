@@ -1,0 +1,28 @@
+:root {
+    --primary: #F4511E;
+    --secondary: #0ABAB5;
+    --third: #ffa742;
+    --text: #303030;
+    --background-1: #fff;
+    --background-2: #F6F6F6;
+
+    --white: #fff;
+}
+
+body {
+    color: var(--text);
+    background: var(--background-1);
+}
+
+
+/* 
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+} */
+  

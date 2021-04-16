@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// Importing the Bootstrap CSS. Sem isso você tem os componentes, mas eles ficam feios.
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import './config/bootstrap/custom.scss' //Import com custom theme
+
+//A ordem importa. Você aqui está dando override no default do Bootstrap acima.
+import "./global styles/global.css"
+
+//Components
+import { Home } from "./pages/Home/Home.js"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Home />
   );
 }
 
